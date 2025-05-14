@@ -3,58 +3,28 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Search, Linkedin, Instagram, Mail, ArrowUp } from "lucide-react"
+import { useState, useEffect, useRef } from "react"
+import Navbar from "./components/Navbar"
+import Footer from "./components/Footer"
 
 export default function Home() {
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [showScrollTop, setShowScrollTop] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 400);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className="flex flex-col min-h-screen">
-      <header className="sticky top-0 z-50 bg-white shadow-sm">
-        <div className="container mx-auto px-5 py-5 flex items-center justify-between">
-          <Link href="/" className="flex-shrink-0">
-            <Image src="/images/inicio/logo_iwf.png" alt="IWF Perú Logo" width={200} height={89} className="h-20 w-auto" />
-          </Link>
+      <Navbar />
 
-          <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
-              INICIO
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
-              QUIÉNES SOMOS
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
-              IWF GLOBAL
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
-              SOCIAS
-            </Link>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
-              ACTIVIDADES
-            </Link>
-            <Link
-              href="#"
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-medium tracking-[0.15em] text-sm transition-colors"
-            >
-              IWF CONNECT
-            </Link>
-            <button className="text-gray-700 hover:text-orange-600">
-              <Search className="h-5 w-5" />
-            </button>
-          </nav>
-
-          <button className="md:hidden text-gray-700">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
-        </div>
-      </header>
-
-      <main className="flex-grow">
+      <main className="flex-grow relative z-30">
         {/* Hero Section */}
         <section className="relative overflow-hidden bg-beige-50">
           <div className="floating-circles">
@@ -345,41 +315,16 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="bg-orange-500 text-white py-8">
-        <div className="container mx-auto px-4">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-xl mb-4 md:mb-0">Síguenos en nuestras redes</p>
+      <Footer />
 
-            <div className="flex space-x-4">
-              <Link
-                href="#"
-                className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-500 transition-colors"
-              >
-                <Linkedin className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-500 transition-colors"
-              >
-                <Instagram className="h-5 w-5" />
-              </Link>
-              <Link
-                href="#"
-                className="w-10 h-10 rounded-full border border-white flex items-center justify-center hover:bg-white hover:text-orange-500 transition-colors"
-              >
-                <Mail className="h-5 w-5" />
-              </Link>
-            </div>
-          </div>
-        </div>
-      </footer>
-
-      <button
-        className="fixed bottom-6 right-6 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        <ArrowUp className="h-6 w-6" />
-      </button>
+      {showScrollTop && (
+        <button
+          className="fixed bottom-6 right-6 w-12 h-12 bg-orange-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-orange-600 transition-colors"
+          onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
+        >
+          <ArrowUp className="h-6 w-6" />
+        </button>
+      )}
     </div>
   )
 }
