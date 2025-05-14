@@ -192,6 +192,7 @@ body {
   flex-direction: column;
   gap: 1.5rem;
   animation: scrollVertical 20s linear infinite;
+  will-change: transform;
 }
 
 .carousel-column:nth-child(2) {
@@ -204,10 +205,17 @@ body {
 
 .carousel-item {
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 1/1;
   border-radius: 1rem;
   overflow: hidden;
-  background: #f3f4f6;
+  position: relative;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
 
 @keyframes scrollVertical {

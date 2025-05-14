@@ -93,41 +93,71 @@ export default function Home() {
               <div className="three-column-carousel">
                 {/* Primera columna */}
                 <div className="carousel-column">
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_01.png" alt="IWF Forum 1" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_02.png" alt="IWF Forum 2" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_03.png" alt="IWF Forum 3" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                   {/* Duplicados para scroll infinito */}
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_01.png" alt="IWF Forum 1" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_02.png" alt="IWF Forum 2" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_03.png" alt="IWF Forum 3" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                 </div>
-
+                
                 {/* Segunda columna */}
                 <div className="carousel-column">
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_04.png" alt="IWF Forum 4" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_05.png" alt="IWF Forum 5" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_06.png" alt="IWF Forum 6" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                   {/* Duplicados para scroll infinito */}
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_04.png" alt="IWF Forum 4" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_05.png" alt="IWF Forum 5" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_06.png" alt="IWF Forum 6" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                 </div>
-
+                
                 {/* Tercera columna */}
                 <div className="carousel-column">
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_01.png" alt="IWF Forum 7" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_02.png" alt="IWF Forum 8" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_03.png" alt="IWF Forum 9" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                   {/* Duplicados para scroll infinito */}
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
-                  <div className="carousel-item shadow-lg bg-gradient-to-br from-gray-100 to-white"></div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_01.png" alt="IWF Forum 7" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_02.png" alt="IWF Forum 8" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
+                  <div className="carousel-item shadow-lg">
+                    <Image src="/images/inicio/forum_inicio_03.png" alt="IWF Forum 9" width={400} height={400} className="w-full h-full object-cover" />
+                  </div>
                 </div>
               </div>
             </div>
