@@ -36,7 +36,7 @@ export default function Home() {
             <div className="md:w-1/2 z-10">
               <div className="title-container">
                 <div className="w-full max-w-3xl">
-                  <div className="words-carousel">
+                  <div className="words-carousel mb-1">
                     <div className="words-carousel-inner">
                       <h1 className="word-item text-3xl md:text-5xl font-montserrat font-bold text-gray-800 tracking-[0.15em]">
                         DIVERSIDAD
@@ -49,8 +49,8 @@ export default function Home() {
                       </h1>
                     </div>
                   </div>
-                  <div className="orange-underline"></div>
-                  <h2 className="text-2xl text-orange-600 font-elegant font-medium mb-8 animate-gentle">
+                  <div className="orange-underline mt-1"></div>
+                  <h2 className="text-2xl text-orange-600 font-elegant font-medium mt-1 mb-8 animate-gentle">
                     International Women's Forum
                     <br />
                     Perú
@@ -247,9 +247,9 @@ export default function Home() {
           </div>
           <div className="container mx-auto px-4 flex flex-col md:flex-row items-center influence-content">
             <div className="md:w-1/2 mb-12 md:mb-0">
-              <h2 className="influence-title text-5xl md:text-6xl mb-6">INFLUENCIA</h2>
-              <div className="orange-underline"></div>
-              <h3 className="text-2xl text-orange-600 font-medium">
+              <h2 className="influence-title text-5xl md:text-6xl mb-1">INFLUENCIA</h2>
+              <div className="orange-underline mt-1"></div>
+              <h3 className="text-2xl text-orange-600 font-medium mt-1">
                 International Women's Forum
                 <br />
                 Perú

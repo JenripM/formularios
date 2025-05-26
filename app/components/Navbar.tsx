@@ -3,13 +3,39 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Search } from "lucide-react"
-import { useState } from "react"
+import { useState, useEffect, useRef } from "react"
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+  const [isSociasDropdownOpen, setIsSociasDropdownOpen] = useState(false);
+  const dropdownRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target as Node)) {
+        setIsDropdownOpen(false);
+        setIsSociasDropdownOpen(false);
+      }
+    };
+
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => {
+      document.removeEventListener('mousedown', handleClickOutside);
+    };
+  }, []);
+
+  const handleQuienesSomosClick = () => {
+    setIsSociasDropdownOpen(false);
+    setIsDropdownOpen(!isDropdownOpen);
+  };
+
+  const handleSociasClick = () => {
+    setIsDropdownOpen(false);
+    setIsSociasDropdownOpen(!isSociasDropdownOpen);
+  };
 
   return (
-    <>
+    <div ref={dropdownRef}>
       <header className="sticky top-0 z-50 bg-[#F5F1EC] shadow-sm">
         <div className="container mx-auto px-5 py-5 flex items-center justify-between">
           <Link href="/" className="flex-shrink-0">
@@ -22,16 +48,19 @@ export default function Navbar() {
             </Link>
             <button 
               className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm"
-              onClick={() => setIsDropdownOpen(!isDropdownOpen)}
+              onClick={handleQuienesSomosClick}
             >
               QUIÉNES SOMOS
             </button>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
+            <Link href="/iwf-global" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
               IWF GLOBAL
             </Link>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
+            <button 
+              className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm"
+              onClick={handleSociasClick}
+            >
               SOCIAS
-            </Link>
+            </button>
             <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
               ACTIVIDADES
             </Link>
@@ -82,6 +111,29 @@ export default function Navbar() {
           </div>
         </div>
       )}
-    </>
+
+      {isSociasDropdownOpen && (
+        <div className="dropdown-menu active">
+          <div className="dropdown-content">
+            <div className="dropdown-section">
+              <h3>Socias</h3>
+              <p>IWF Chile reúne a un grupo diverso de mujeres líderes con destacada trayectoria en distintos ámbitos, desde los negocios y la academia hasta ciencia, cultura o servicio público.</p>
+            </div>
+            <div className="dropdown-section">
+              <Link href="/socias/listado" className="dropdown-link font-elegant text-2xl" onClick={() => setIsSociasDropdownOpen(false)}>
+                Listado de socias
+                <span className="dropdown-arrow">›</span>
+              </Link>
+            </div>
+            <div className="dropdown-section">
+              <Link href="/socias/criterios" className="dropdown-link gray font-elegant text-2xl" onClick={() => setIsSociasDropdownOpen(false)}>
+                Criterios de asociación
+                <span className="dropdown-arrow">›</span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
   )
 } 
