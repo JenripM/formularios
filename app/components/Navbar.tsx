@@ -61,7 +61,7 @@ export default function Navbar() {
             >
               SOCIAS
             </button>
-            <Link href="#" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
+            <Link href="/actividades" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
               ACTIVIDADES
             </Link>
             <Link
