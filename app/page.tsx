@@ -238,37 +238,29 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Influence Section */}
-        <section className="influence-section py-16 md:py-24">
-          <div className="floating-circles">
-            <div className="floating-circle"></div>
-            <div className="floating-circle"></div>
-            <div className="floating-circle"></div>
-          </div>
-          <div className="container mx-auto px-4 flex flex-col md:flex-row items-center influence-content">
-            <div className="md:w-1/2 mb-12 md:mb-0">
-              <h2 className="influence-title text-5xl md:text-6xl mb-1">INFLUENCIA</h2>
-              <div className="orange-underline mt-1"></div>
-              <h3 className="text-2xl text-orange-600 font-medium mt-1">
-                International Women's Forum
-                <br />
-                Perú
-              </h3>
+        {/* Asamblea 2024 Section */}
+        <section className="py-8 md:py-12 bg-blue-800 text-white">
+          <div className="container mx-auto px-4">
+            <div className="text-center mb-8">
+              <h2 className="text-4xl font-bold mb-4 tracking-[0.2em]">ASAMBLEA 2024</h2>
+              <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
             </div>
-
-            <div className="md:w-1/2 relative">
-              <div className="grid grid-cols-2 gap-4">
-                <div className="relative h-48 md:h-64 overflow-hidden rounded-tl-full shadow-lg">
-                  <Image src="/images/women3.jpg" alt="Women leaders" fill className="object-cover" />
-                </div>
-                <div className="relative h-48 md:h-64 overflow-hidden rounded-tr-full shadow-lg">
-                  <div className="absolute inset-0 bg-orange-500/30 backdrop-blur-sm rounded-tr-full"></div>
-                </div>
-                <div className="relative h-48 md:h-64 overflow-hidden rounded-bl-full shadow-lg">
-                  <div className="absolute inset-0 bg-orange-500/30 backdrop-blur-sm rounded-bl-full"></div>
-                </div>
-                <div className="relative h-48 md:h-64 overflow-hidden rounded-br-full shadow-lg">
-                  <Image src="/images/women4.jpg" alt="Women leaders" fill className="object-cover" />
+            
+            <div className="max-w-4xl mx-auto">
+              <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+                <Image
+                  src="/placeholder.jpg"
+                  alt="Asamblea 2024"
+                  fill
+                  className="object-cover"
+                />
+                <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
+                  <div className="text-center">
+                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
+                      <div className="w-0 h-0 border-l-[12px] border-l-white border-y-[8px] border-y-transparent ml-1"></div>
+                    </div>
+                    <p className="text-white text-lg font-medium">Asamblea Anual 2024</p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -276,43 +268,45 @@ export default function Home() {
         </section>
 
         {/* Sponsors */}
-        <section className="py-16 md:py-24 bg-navy-800 text-white">
+        <section className="py-16 md:py-24 bg-slate-800 text-white">
           <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-12">NOS APOYAN</h2>
+            <h2 className="text-4xl font-bold mb-4 tracking-[0.2em]">NOS APOYAN</h2>
+            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
 
-            <div className="flex flex-wrap justify-center items-center gap-12">
-              <div className="w-40 h-20 bg-white rounded-md flex items-center justify-center p-4">
+            <div className="flex flex-wrap justify-center items-center gap-10 mb-10">
+              <div className="flex items-center justify-center p-6">
                 <Image
-                  src="/images/sponsor1.png"
-                  alt="Sponsor 1"
-                  width={120}
-                  height={60}
-                  className="max-h-full w-auto"
+                  src="/images/inicio/albagli.png"
+                  alt="Albagli Zaliasnik"
+                  width={200}
+                  height={100}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
-              <div className="w-40 h-20 bg-white rounded-md flex items-center justify-center p-4">
+              <div className="flex items-center justify-center p-6">
                 <Image
-                  src="/images/sponsor2.png"
-                  alt="Sponsor 2"
-                  width={120}
-                  height={60}
-                  className="max-h-full w-auto"
+                  src="/images/inicio/ey.png"
+                  alt="EY Building a better working world"
+                  width={200}
+                  height={100}
+                  className="max-w-full max-h-full object-contain"
                 />
               </div>
             </div>
 
-            <div className="mt-24 relative">
-              <div className="absolute left-1/2 -translate-x-1/2 -top-16 w-64 h-32 bg-orange-500 rounded-t-full"></div>
+            {/* 50 Years Logo - Image now includes the orange semicircle */}
+            <div className="relative">
               <Image
-                src="/images/50years.png"
+                src="/images/inicio/50years.png" 
                 alt="50 years women changing the world"
-                width={400}
-                height={150}
-                className="mx-auto relative z-10"
+                width={500}
+                height={250}
+                className="mx-auto relative z-10 mb-[-99px]"
               />
             </div>
           </div>
         </section>
+
       </main>
 
       <Footer />

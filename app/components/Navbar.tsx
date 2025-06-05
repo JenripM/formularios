@@ -2,12 +2,13 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Search } from "lucide-react"
+import { Search, X } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 
 export default function Navbar() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [isSociasDropdownOpen, setIsSociasDropdownOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
@@ -32,6 +33,17 @@ export default function Navbar() {
   const handleSociasClick = () => {
     setIsDropdownOpen(false);
     setIsSociasDropdownOpen(!isSociasDropdownOpen);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+    // Close other dropdowns when opening mobile menu
+    setIsDropdownOpen(false);
+    setIsSociasDropdownOpen(false);
+  };
+
+  const closeMobileMenu = () => {
+    setIsMobileMenuOpen(false);
   };
 
   return (
@@ -75,18 +87,75 @@ export default function Navbar() {
             </button>
           </nav>
 
-          <button className="md:hidden text-gray-700">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              className="h-6 w-6"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
+          <button 
+            className="md:hidden text-gray-700 z-50 relative"
+            onClick={toggleMobileMenu}
+          >
+            {isMobileMenuOpen ? (
+              <X className="h-6 w-6" />
+            ) : (
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                className="h-6 w-6"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            )}
           </button>
         </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="md:hidden absolute top-full left-0 w-full bg-[#F5F1EC] shadow-lg z-40">
+            <nav className="flex flex-col py-4">
+              <Link 
+                href="/" 
+                className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
+                onClick={closeMobileMenu}
+              >
+                INICIO
+              </Link>
+              <Link 
+                href="/quienes-somos" 
+                className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
+                onClick={closeMobileMenu}
+              >
+                QUIÉNES SOMOS
+              </Link>
+              <Link 
+                href="/iwf-global" 
+                className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
+                onClick={closeMobileMenu}
+              >
+                IWF GLOBAL
+              </Link>
+              <Link 
+                href="/socias/listado" 
+                className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
+                onClick={closeMobileMenu}
+              >
+                SOCIAS
+              </Link>
+              <Link 
+                href="/actividades" 
+                className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
+                onClick={closeMobileMenu}
+              >
+                ACTIVIDADES
+              </Link>
+              <Link
+                href="#"
+                className="mx-5 my-3 bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full font-medium tracking-[0.15em] text-sm transition-colors text-center"
+                onClick={closeMobileMenu}
+              >
+                IWF CONNECT
+              </Link>
+            </nav>
+          </div>
+        )}
       </header>
 
       {isDropdownOpen && (
