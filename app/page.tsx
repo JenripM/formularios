@@ -155,9 +155,9 @@ export default function Home() {
               con 50 años consecutivos de crecimiento.
             </p>
             <div className="text-2xl md:text-4xl font-medium tracking-[0.15em] animate-reveal delay-600">
-              <span className="font-montserrat">77 FOROS</span>
+              <span className="font-montserrat">78 FOROS</span>
               <span className="mx-4 text-white/80">|</span>
-              <span className="font-montserrat">34 PAÍSES</span>
+              <span className="font-montserrat">35 PAÍSES</span>
             </div>
           </div>
         </section>
@@ -253,7 +253,7 @@ export default function Home() {
           <section className="py-8 md:py-10 bg-blue-800 text-white">
       <div className="container mx-auto px-4">
         <div className="text-center mb-8">
-          <h2 className="text-3xl font-bold mb-4 tracking-[0.2em]">ASAMBLEA 2024</h2>
+          <h2 className="text-3xl font-bold mb-4 tracking-[0.2em]">LANZAMIENTO OFICIAL 2025</h2>
           <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
         </div>
 

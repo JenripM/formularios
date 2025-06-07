@@ -61,12 +61,12 @@ export default function ListadoSociasPage() {
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-600 leading-relaxed mb-4 text-sm font-elegant">
-              IWF Chile reúne a un grupo diverso de mujeres líderes con destacada trayectoria en ámbitos como los negocios, la academia, la 
+              IWF Perú reúne a un grupo diverso de mujeres líderes con destacada trayectoria en ámbitos como los negocios, la academia, la 
               ciencia, la cultura y el servicio público. A través de su experiencia y conocimientos, nuestras socias contribuyen activamente al 
-              desarrollo de la organización y al fortalecimiento del liderazgo femenino en Chile.
+              desarrollo de la organización y al fortalecimiento del liderazgo femenino en Perú.
             </p>
             <p className="text-gray-600 leading-relaxed text-sm font-elegant">
-              Conoce a las mujeres que forman parte de esta red y que, con su visión y liderazgo, impulsan el cambio en Chile y el mundo. IWF 
+              Conoce a las mujeres que forman parte de esta red y que, con su visión y liderazgo, impulsan el cambio en Perú y el mundo. IWF 
               desempeña un papel crucial a la hora de incentivar a la próxima generación de mujeres líderes, ayudándolas a que persigan sus 
               sueños y sus aspiraciones de desarrollo profesional.
             </p>

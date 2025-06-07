@@ -25,7 +25,7 @@ export default function QuienesSomos() {
       {/* Banner Section */}
       <section className="relative h-[500px] w-full">
         <Image
-            src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
+            src="https://i.imgur.com/IsTwVCN.jpeg"
           alt="IWF Forum Banner"
           fill
           className="object-cover"
@@ -97,7 +97,7 @@ export default function QuienesSomos() {
               
               <div className="mt-0 md:mt-[320px] pr-0 md:pr-16">
                 <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant" style={{ lineHeight: '1.8' }}>
-                  IWF es una comunidad internacional, no partidista y apolítica, presente en 34 países, entre ellos Chile, y que tiene más de 8.000 mujeres líderes de primer nivel como asociadas, con más de 50 años consecutivos de continuo crecimiento. Ha sido creada para enriquecer y promover el liderazgo femenino, conectando a mujeres de alto nivel profesional a través de diversos espacios de encuentro, con el compromiso de impulsar la igualdad de oportunidades.
+                  IWF es una comunidad internacional, no partidista y apolítica, presente en 34 países, entre ellos Perú, y que tiene más de 8.000 mujeres líderes de primer nivel como asociadas, con más de 50 años consecutivos de continuo crecimiento. Ha sido creada para enriquecer y promover el liderazgo femenino, conectando a mujeres de alto nivel profesional a través de diversos espacios de encuentro, con el compromiso de impulsar la igualdad de oportunidades.
                 </p>
               </div>
             </div>
@@ -105,17 +105,27 @@ export default function QuienesSomos() {
         </div>
 
         {/* Vision y Mision - Now outside the container, for full-width */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mt-16 md:mt-32">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-16 md:mt-32">
           <div className="bg-[#F5F1EC] p-8 md:p-16">
             <h2 className="text-2xl md:text-4xl font-modern text-gray-800 mb-4 md:mb-6">NUESTRA VISIÓN</h2>
             <p className="text-gray-600 text-base md:text-xl leading-relaxed font-elegant">
-              Ser la mayor comunidad global de profesionales prestigiosas, promoviendo el liderazgo en las mujeres hoy y mañana.
+              Ser un foro influyente de mujeres líderes peruanas que impacten positivamente en su entorno, generando redes de confianza, colaboración y crecimiento, tanto a nivel nacional como internacional.
             </p>
           </div>
           <div className="bg-[#D4B572] p-8 md:p-16">
             <h2 className="text-2xl md:text-4xl font-modern text-gray-700 mb-4 md:mb-6">NUESTRA MISIÓN</h2>
             <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant">
-              Conectar una comunidad global de mujeres líderes, creando espacios donde se den conversaciones relevantes.
+              Fomentar la participación activa de mujeres líderes en diversos ámbitos del país, promoviendo el desarrollo de sus capacidades, el fortalecimiento de su influencia y el apoyo entre pares.
+            </p>
+          </div>
+           <div className="bg-[#F5F1EC] p-8 md:p-16">
+            <h2 className="text-2xl md:text-4xl font-modern text-gray-700 mb-4 md:mb-6">PROPÓSITO</h2>
+            <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant">
+
+
+Nuestro propósito es impulsar la equidad y el liderazgo femenino a nivel global, promoviendo el intercambio cultural y profesional entre mujeres de diversos ámbitos.
+
+IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difusión de ideas y nuevas perspectivas mediante el desarrollo de programas,  conversatorios y eventos innovadores en temas vinculados al liderazgo, crecimiento personal y profesional, tecnología, cultura, arte, educación, deporte y diversidad, promoviendo espacios más inclusivos y equitativos para las futuras generaciones
             </p>
           </div>
         </div>
@@ -158,7 +168,7 @@ export default function QuienesSomos() {
                 </div>
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Visibilidad</h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
-                  <p className="mb-2">- <strong>Somos un referente</strong> para otras mujeres chilenas.</p>
+                  <p className="mb-2">- <strong>Somos un referente</strong> para otras mujeres peruanas.</p>
                   <p className="mb-2">- <strong>Prestigio</strong> de ser parte de la organización.</p>
                 </div>
               </div>
@@ -175,7 +185,7 @@ export default function QuienesSomos() {
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Diversidad</h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
                   <p className="mb-2">- <strong>Son parte</strong> mujeres de distintas disciplinas, generaciones y regiones.</p>
-                  <p className="mb-2">- <strong>Aseguramos</strong> que nuestra red refleje la riqueza y pluralidad del talento femenino en Chile.</p>
+                  <p className="mb-2">- <strong>Aseguramos</strong> que nuestra red refleje la riqueza y pluralidad del talento femenino en Perú.</p>
                 </div>
               </div>
 
