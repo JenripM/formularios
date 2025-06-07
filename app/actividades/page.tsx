@@ -12,7 +12,7 @@ export default function ActividadesPage() {
       {/* Hero Section */}
       <div className="relative h-[400px] bg-gradient-to-r from-black/50 to-black/30">
         <Image
-          src="/images/actividades/ac_principal.jpg"
+          src="https://lh3.googleusercontent.com/pw/AP1GczMTwK8z7AFAija412O3NBSp809maSFCtyzNRS4RUvpZPTRe3IB66bfjmD5xfPoKY7oEChfJ89fJDt2qr-D4pPV4BI-LlD23Hv_f2OW-d7BxYSM-QUTx-KJOIqDx5JLJPkXk4uZQQTHiCKhG9xcCQTBD=w1418-h945-s-no-gm?authuser=0"
           alt="Actividades IWF"
           fill
           className="object-cover"
