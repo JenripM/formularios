@@ -83,7 +83,7 @@ export default function ActividadesPage() {
               {/* First set of images */}
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_6.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczO0Ik2gEe9xGUm6d4KQmSdgaLCwi-elSIuZefhyjW_hdUGoMau2uYKucv010GkRhX2xgjyCzL4jZ1zkgCLGypdIlPLDUwRjeVc7xGP1NU1OM7rWr6PNlqvZlAO0aUFUUvefmhY9psAaoRF3HyMhbAzI=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -91,7 +91,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_1.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -99,7 +99,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_2.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczMU7XUVw3Ua0SS5rHjtUQHa_RaA_CjHIA6u9pd-x86rIQykSwl01HMS0O1r6br9lQEPe_8eOitjtoeaK5HvOUX0CcUG3UW47wco5_2VuxZfsNN2YC3EWX6llTIDNVqcphWuVXDnnKBHW76RNWmKKXYE=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -107,7 +107,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_3.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczNNJH7JP5iTwhcB3KkJUiWhKqADFew9qUW5yaHjxT8nAQGIiqBoFH2k5WBAmO5s5rOyH9T3yhCXWr9Qlh618o8V6Z7onUuPrO_yHsYpOQHt38UAvRA-DvS1vD8PBMjKQxrM4jVWNtJUpxBK2Iob7NHY=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -115,7 +115,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_4.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczMKY2N91X5WO0Gjs-ATSkq8rXIIIwBPyDEZViOmh2TbC4dshWoZhx8k20c0PVHh0BCv9qCl0xAeEcYLDCnnkYC6AtUmnA5tvgp_oxtLQ1SzTp9qe_IUwEFRXwYdcFRfWXqGD87CV9Uqp0YkcRG9O65f=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -125,7 +125,7 @@ export default function ActividadesPage() {
               {/* Duplicate set for infinite scroll */}
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_5.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczOEDeyjVx5yB5LjihgnhY3-baYZ8SnSPdHog65WXLupq0zIVdwLifKoW3UQMJCVoo0fT-GXWiiYBO54QUHbvG6TS1vsciKNF26jaHcG-D6Jd3YBz1uW5fpeIVvASo53nUg4smZYOZRc0XFIMw7pAtTr=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -133,7 +133,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_7.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczOTuqzSWYsh_hpxfSXmeqvOV9GlP02OKtSoSH7Aud9PfOqPN3tp8mM2Vbkfzgj2TWHIQTaWA_wKXX6OZxKzznYj_RvLV7LIzTtqIEoIBAoVw_XvlyAue_r3t-_Z8U-htBnt-d1e1DXQtXjxMoNRFqKC=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -141,7 +141,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczOt3Ycs5Gym__XYq2r41VZn8za7r7VXEVeRlEx0Ivp6E0NmrFI9q33AJqk9bwDuIDON9rAvh3bzpas5YhIdBYhlgqonQkT-HyuYdFVqmDNYiRR3h43n3wchZr5L78yuwjzvr8QzcPuTJSj-cSg2vgr7=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -149,7 +149,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczPnmGeUn0ITeWpdUa0sEg90jhqu9rBE7l0kjwLwbHutrh2QGlkZhTN9Hj0GHW0NYowGGNgyg76CbANEOJn9ZnyJ9DhTQSZJ2dbnXit-FZ-R2KQyDc2urHrv7q2uZzhUrGPEcx-qd7bhL9AGH92lD98_=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -157,7 +157,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="https://lh3.googleusercontent.com/pw/AP1GczNiYGDiEAKNm819L4BUglbR1hojJDmgCpxCgaqMKb7YHeaE_3_O2v9ilF7SWYy1S8rSZnOZ1-_sgfCA2RVmsy3-Js5S7cwnhO306VhdU3ubwEGuJg7w3D6ebKpn37AuCnZgHlWMH2B3NHhzGj4Q9Z4y=w1340-h893-s-no-gm?authuser=0"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
