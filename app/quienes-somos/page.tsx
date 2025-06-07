@@ -25,7 +25,7 @@ export default function QuienesSomos() {
       {/* Banner Section */}
       <section className="relative h-[500px] w-full">
         <Image
-          src="/images/quienesSomos/foro_banner.png"
+          src="/images/quienesSomos/_MG_8336.jpg"
           alt="IWF Forum Banner"
           fill
           className="object-cover"
@@ -72,7 +72,7 @@ export default function QuienesSomos() {
             <div className="w-full md:w-1/2">
               <div className="relative h-[300px] md:h-[600px] w-full">
                 <Image
-                  src="/images/quienesSomos/imagen_fundadora.png"
+                  src="/images/quienesSomos/1.png"
                   alt="Fundadora IWF"
                   fill
                   className="object-contain"

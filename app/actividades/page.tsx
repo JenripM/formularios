@@ -12,7 +12,7 @@ export default function ActividadesPage() {
       {/* Hero Section */}
       <div className="relative h-[400px] bg-gradient-to-r from-black/50 to-black/30">
         <Image
-          src="/images/actividades/actividades.png"
+          src="/images/actividades/ac_principal.jpg"
           alt="Actividades IWF"
           fill
           className="object-cover"
@@ -67,7 +67,7 @@ export default function ActividadesPage() {
             {/* Bottom Right - Image */}
             <div className="relative min-h-[200px] md:min-h-[192px]">
               <Image
-                src="/images/actividades/actividades_cuadrado.jpg"
+                src="/images/actividades/ac_2.jpg"
                 alt="Actividades IWF"
                 fill
                 className="object-cover"
@@ -83,7 +83,7 @@ export default function ActividadesPage() {
               {/* First set of images */}
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_6.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -91,7 +91,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_1.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -99,7 +99,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_2.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -107,7 +107,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_3.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -115,7 +115,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_4.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -125,7 +125,7 @@ export default function ActividadesPage() {
               {/* Duplicate set for infinite scroll */}
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_5.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -133,7 +133,7 @@ export default function ActividadesPage() {
               </div>
               <div className="flex-shrink-0 w-64 h-48 md:w-80 md:h-60 relative">
                 <Image
-                  src="/images/actividades/actividades_chile.jpg"
+                  src="/images/actividades/actividades_7.jpg"
                   alt="Actividades IWF Chile"
                   fill
                   className="object-cover rounded-lg shadow-lg"
@@ -178,7 +178,7 @@ export default function ActividadesPage() {
             <div className="relative group cursor-pointer">
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/conferencias/seattle.jpg"
+                  src="/images/conferencias/conferencia_1.jpg"
                   alt="Seattle Space Needle"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -203,7 +203,7 @@ export default function ActividadesPage() {
             <div className="relative group cursor-pointer">
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/conferencias/capetown.jpg"
+                  src="/images/conferencias/conferencia_2.jpg"
                   alt="Cape Town South Africa"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -228,7 +228,7 @@ export default function ActividadesPage() {
             <div className="relative group cursor-pointer">
               <div className="relative h-64 md:h-80 rounded-lg overflow-hidden shadow-lg">
                 <Image
-                  src="/images/conferencias/london.jpg"
+                  src="/images/conferencias/conferencia_3.jpg"
                   alt="London Big Ben"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

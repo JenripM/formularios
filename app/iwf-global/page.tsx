@@ -1,7 +1,125 @@
 import Image from "next/image"
 import Navbar from "../components/Navbar"
+import Footer from "../components/Footer";
 
 export default function IWFGlobal() {
+  const members = [
+  {
+    name: 'Kimberly Cooper Jaqua',
+    role: 'Presidenta IWF Global',
+    organization: 'IWF Oregon',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-06.png',
+  },
+  {
+    name: 'Elisabeth Ourliac',
+    role: 'Vicepresidenta Global',
+    organization: 'IWF Francia',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-07.png',
+  },
+  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-08.png',
+  },
+  {
+    name: 'Reem Abu Hassan',
+    role: 'Directora IWF Global',
+    organization: 'IWF Jordania',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-09.png',
+  },
+    {
+    name: 'Kimberly Cooper Jaqua',
+    role: 'Presidenta IWF Global',
+    organization: 'IWF Oregon',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-10.png',
+  },
+  {
+    name: 'Elisabeth Ourliac',
+    role: 'Vicepresidenta Global',
+    organization: 'IWF Francia',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-11.png',
+  },
+  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-12.png',
+  },
+  {
+    name: 'Reem Abu Hassan',
+    role: 'Directora IWF Global',
+    organization: 'IWF Jordania',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-13.png',
+  },
+    {
+    name: 'Kimberly Cooper Jaqua',
+    role: 'Presidenta IWF Global',
+    organization: 'IWF Oregon',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-14.png',
+  },
+    {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-15.png',
+  },  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-16.png',
+  },  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-17.png',
+  },  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-21.png',
+  },
+  {
+    name: 'Elisabeth Ourliac',
+    role: 'Vicepresidenta Global',
+    organization: 'IWF Francia',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-20.png',
+  },
+  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-19.png',
+  },
+  
+  {
+    name: 'Reem Abu Hassan',
+    role: 'Directora IWF Global',
+    organization: 'IWF Jordania',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-18.png',
+  },
+    {
+    name: 'Kimberly Cooper Jaqua',
+    role: 'Presidenta IWF Global',
+    organization: 'IWF Oregon',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-22.png',
+  },
+  {
+    name: 'Elisabeth Ourliac',
+    role: 'Vicepresidenta Global',
+    organization: 'IWF Francia',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-23.png',
+  },
+  {
+    name: 'Rosel Moxel',
+    role: 'Presidenta del comité de Auditoría y Finanzas de la IWF',
+    organization: 'IWF Bahamas',
+    image: 'https://iwfchile.cl/wp-content/uploads/2025/03/dg-24.png',
+  },
+ 
+
+];
+
   return (
     <>
       <Navbar />
@@ -9,7 +127,7 @@ export default function IWFGlobal() {
         {/* Hero Banner */}
         <div className="relative w-full h-[400px]">
           <Image
-            src="/images/iwfGlobal/iwfGlobal.png"
+            src="/images/iwfGlobal/fig1.jpg"
             alt="IWF Global Banner"
             fill
             className="object-cover"
@@ -67,6 +185,25 @@ export default function IWFGlobal() {
             />
           </div>
         </section>
+<section className="py-8 px-4 sm:px-8 md:px-16 lg:px-80 bg-gray-100">
+  <h2 className="text-4xl font-elegant font-bold text-gray-700 mb-6">
+    DIRECTORIO IWF GLOBAL
+    <hr className="border-t-2 border-orange-500 mt-2 w-[35%]" />
+  </h2>
+
+  <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+    {members.map((member, index) => (
+      <div key={index} className="flex flex-col items-center p-4">
+        <img className="w-48 h-48 sm:w-64 sm:h-64 object-cover mb-4" src={member.image} alt={member.name} />
+        <p className="text-xl font-semibold text-gray-800">{member.name}</p>
+        <p className="text-sm text-gray-600">{member.role}</p>
+        <p className="text-sm text-gray-500">{member.organization}</p>
+      </div>
+    ))}
+  </div>
+</section>
+
+      <Footer />
 
       </main>
     </>

@@ -3,93 +3,30 @@
 import Image from "next/image"
 import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer"
-import { useState } from "react"
-
-// Datos de ejemplo de las socias - puedes reemplazar con datos reales
-const socias = [
-  {
-    id: 1,
-    name: "Tamara Agnic",
-    title: "Socia y presidenta de Asociación miembros del directorio de Banco Estado",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Socia de Escolatora, presidenta de Chile Transparente y directora de Euroestudios, donde fue presidenta del Comité de Auditoría. Con más de 30 años de experiencia en gobierno corporativo, cumplimiento y sistemas de integridad, ha liderado importantes entidades públicas y privadas, como la Superintendencia de Pensiones y la Unidad de Análisis Financiero (UAF). Ingeniera comercial y MBA. Tamara también se desempeña como defensora del liderazgo femenino y la transparencia, contribuyendo significativamente al desarrollo de políticas y estrategias para fortalecer la integridad y la responsabilidad social en las organizaciones chilenas.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 2,
-    name: "Catalina Aguirre",
-    title: "Fundadora & CEO de Kumiko Skincare",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Emprendedora y líder en la industria de cosméticos naturales. Fundó Kumiko Skincare con la visión de crear productos de belleza sustentables y de alta calidad. Con más de 15 años de experiencia en el sector, ha posicionado su marca como referente en el mercado chileno.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 3,
-    name: "Ariela Agosin",
-    title: "Socia de Agosin Zabaleta",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Abogada especializada en derecho corporativo y comercial. Socia del prestigioso estudio jurídico Agosin Zabaleta, donde lidera importantes transacciones y asesorías legales para empresas multinacionales.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 4,
-    name: "Mónica Alcalde",
-    title: "Consejera de Fast Food Program Chile",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Ejecutiva con amplia experiencia en la industria alimentaria y retail. Ha ocupado posiciones de liderazgo en importantes empresas del sector, contribuyendo al desarrollo de estrategias comerciales innovadoras.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 5,
-    name: "Dora Altbir",
-    title: "PhD en Ciencias Exactas/Investigación en",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Científica e investigadora reconocida internacionalmente en el campo de la física y ciencias exactas. Ha publicado numerosos artículos científicos y ha contribuido significativamente al avance del conocimiento en su área.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 6,
-    name: "Isabel Aninat",
-    title: "CEO & Founder en Aninat Galería",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Galerista y promotora de arte contemporáneo. Fundó Aninat Galería, una de las galerías más prestigiosas de Chile, promoviendo el arte latinoamericano y apoyando a artistas emergentes.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 7,
-    name: "Patricia Arancibia",
-    title: "Historiadora y escritora",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Historiadora y escritora reconocida por sus investigaciones sobre la historia política y social de Chile. Ha publicado numerosos libros y artículos académicos que han contribuido al entendimiento de la historia contemporánea.",
-    linkedin: "#",
-    curriculum: "#"
-  },
-  {
-    id: 8,
-    name: "Paola Assael",
-    title: "Economista y socia de Blackstone",
-    image: "/images/socias/tamara_agnic.jpg",
-    description: "Economista especializada en mercados financieros e inversiones. Socia de Blackstone, donde lidera estrategias de inversión y desarrollo de mercados en América Latina.",
-    linkedin: "#",
-    curriculum: "#"
-  }
-]
+import { useEffect, useState } from "react"
+import useFirestore from "../../../hooks/useFirestore";
 
 export default function ListadoSociasPage() {
-  const [selectedSocia, setSelectedSocia] = useState<any>(null)
+  const [selectedMember, setSelectedMember] = useState<any>(null)
+  const [equipoList, setEquipo] = useState<any[]>([]);
 
-  const openModal = (socia: any) => {
-    setSelectedSocia(socia)
+  const { getEquipo } = useFirestore();
+
+  useEffect(() => {
+    async function fetchEquipo() {
+      const data = await getEquipo();
+      console.log("Datos recibidos de getEquipo:", data);
+      setEquipo(data ?? []);
+    }
+    fetchEquipo();
+  }, [getEquipo]);
+
+  const openModal = (member: any) => {
+    setSelectedMember(member)
   }
 
   const closeModal = () => {
-    setSelectedSocia(null)
+    setSelectedMember(null)
   }
 
   return (
@@ -98,7 +35,7 @@ export default function ListadoSociasPage() {
       {/* Hero Section */}
       <div className="relative h-[400px] bg-gradient-to-r from-black/50 to-black/30">
         <Image
-          src="/images/socias/socias_conjunto.png"
+          src="/images/socias/socias_conjunto2.jpg"
           alt="Socias IWF"
           fill
           className="object-cover"
@@ -138,25 +75,25 @@ export default function ListadoSociasPage() {
 
         {/* Socias Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {socias.map((socia) => (
-            <div key={socia.id} className="bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
+          {equipoList.map((member) => (
+            <div key={member.id} className="bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-[3/4] relative">
                 <Image
-                  src={socia.image}
-                  alt={socia.name}
+                  src={member.imagenUrl || "/images/default-profile.jpg"}
+                  alt={member.nombres}
                   fill
                   className="object-cover"
                 />
               </div>
               <div className="p-4 text-center">
                 <h3 className="font-semibold text-base text-gray-800 mb-1">
-                  {socia.name}
+                  {member.nombres}
                 </h3>
                 <p className="text-xs text-gray-600 leading-relaxed mb-3">
-                  {socia.title}
+                  {member.cargo}
                 </p>
                 <button 
-                  onClick={() => openModal(socia)}
+                  onClick={() => openModal(member)}
                   className="text-orange-500 hover:text-orange-600 transition-colors"
                 >
                   <span className="text-xl font-light">+</span>
@@ -168,7 +105,7 @@ export default function ListadoSociasPage() {
       </div>
       
       {/* Modal */}
-      {selectedSocia && (
+      {selectedMember && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 p-4">
           <div className="bg-white max-w-4xl w-full max-h-[90vh] overflow-y-auto relative">
             {/* Close button */}
@@ -184,18 +121,18 @@ export default function ListadoSociasPage() {
               <div className="md:w-1/3 bg-gray-100">
                 <div className="aspect-[3/4] relative">
                   <Image
-                    src={selectedSocia.image}
-                    alt={selectedSocia.name}
+                    src={selectedMember.imagenUrl || "/images/default-profile.jpg"}
+                    alt={selectedMember.nombres}
                     fill
                     className="object-cover"
                   />
                 </div>
                 <div className="p-6 text-center bg-white">
                   <h3 className="font-semibold text-lg text-gray-800 mb-2">
-                    {selectedSocia.name}
+                    {selectedMember.nombres}
                   </h3>
                   <p className="text-sm text-gray-600 mb-4">
-                    {selectedSocia.title}
+                    {selectedMember.cargo}
                   </p>
                   <button className="text-orange-500 hover:text-orange-600 transition-colors mb-2">
                     <span className="text-xl font-light">+</span>
@@ -207,25 +144,39 @@ export default function ListadoSociasPage() {
               <div className="md:w-2/3 bg-purple-800 text-white p-8">
                 <div className="mb-6">
                   <p className="text-sm leading-relaxed mb-6">
-                    {selectedSocia.description}
+                    {selectedMember.descripcion}
                   </p>
                   
                   <div className="flex gap-4 mb-8">
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
-                      LinkedIn
-                    </button>
-                    <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
-                      Ver Curriculum
-                    </button>
+                    {selectedMember.linkedin && (
+                      <a 
+                        href={selectedMember.linkedin} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+                      >
+                        LinkedIn
+                      </a>
+                    )}
+                    {selectedMember.curriculum && (
+                      <a 
+                        href={selectedMember.curriculum} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors"
+                      >
+                        Ver Curriculum
+                      </a>
+                    )}
                   </div>
                 </div>
                 
                 <div className="border-t border-purple-600 pt-6">
                   <h4 className="text-xl font-elegant mb-2">
-                    {selectedSocia.name}
+                    {selectedMember.nombres}
                   </h4>
                   <p className="text-sm opacity-90">
-                    {selectedSocia.title}
+                    {selectedMember.cargo}
                   </p>
                 </div>
               </div>
@@ -237,4 +188,4 @@ export default function ListadoSociasPage() {
       <Footer />
     </div>
   )
-} 
+}

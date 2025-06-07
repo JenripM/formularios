@@ -6,11 +6,22 @@ import { Search, Linkedin, Instagram, Mail, ArrowUp } from "lucide-react"
 import { useState, useEffect, useRef } from "react"
 import Navbar from "./components/Navbar"
 import Footer from "./components/Footer"
+import Slider from "react-slick"
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 export default function Home() {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
   const [showScrollTop, setShowScrollTop] = useState(false);
-
+  const settings = {
+    dots: true,               // Muestra los puntos de navegación
+    infinite: true,           // Desplazamiento infinito
+    speed: 5,               // Velocidad de transición
+    slidesToShow: 1,          // Cuántas imágenes mostrar a la vez
+    slidesToScroll: 1,        // Cuántas imágenes mover por vez
+    autoplay: true,           // Hace que se mueva automáticamente
+    autoplaySpeed: 3000,      // Velocidad de auto-movimiento (3 segundos)
+  };
   useEffect(() => {
     const handleScroll = () => {
       setShowScrollTop(window.scrollY > 400);
@@ -239,73 +250,39 @@ export default function Home() {
         </section>
 
         {/* Asamblea 2024 Section */}
-        <section className="py-8 md:py-12 bg-blue-800 text-white">
-          <div className="container mx-auto px-4">
-            <div className="text-center mb-8">
-              <h2 className="text-4xl font-bold mb-4 tracking-[0.2em]">ASAMBLEA 2024</h2>
-              <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
-            </div>
-            
-            <div className="max-w-4xl mx-auto">
-              <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
-                <Image
-                  src="/placeholder.jpg"
-                  alt="Asamblea 2024"
-                  fill
-                  className="object-cover"
-                />
-                <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
-                  <div className="text-center">
-                    <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mb-4 mx-auto">
-                      <div className="w-0 h-0 border-l-[12px] border-l-white border-y-[8px] border-y-transparent ml-1"></div>
-                    </div>
-                    <p className="text-white text-lg font-medium">Asamblea Anual 2024</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+          <section className="py-8 md:py-10 bg-blue-800 text-white">
+      <div className="container mx-auto px-4">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl font-bold mb-4 tracking-[0.2em]">ASAMBLEA 2024</h2>
+          <div className="w-24 h-1 bg-orange-500 mx-auto"></div>
+        </div>
 
-        {/* Sponsors */}
-        <section className="py-16 md:py-24 bg-slate-800 text-white">
-          <div className="container mx-auto px-4 text-center">
-            <h2 className="text-4xl font-bold mb-4 tracking-[0.2em]">NOS APOYAN</h2>
-            <div className="w-24 h-1 bg-orange-500 mx-auto mb-8"></div>
-
-            <div className="flex flex-wrap justify-center items-center gap-10 mb-10">
-              <div className="flex items-center justify-center p-6">
-                <Image
-                  src="/images/inicio/albagli.png"
-                  alt="Albagli Zaliasnik"
-                  width={200}
-                  height={100}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-              <div className="flex items-center justify-center p-6">
-                <Image
-                  src="/images/inicio/ey.png"
-                  alt="EY Building a better working world"
-                  width={200}
-                  height={100}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
+        <div className="max-w-4xl mx-auto">
+          <Slider {...settings}>
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_01.png" alt="Imagen 1" className="object-cover w-full h-full" />
             </div>
-
-            {/* 50 Years Logo - Image now includes the orange semicircle */}
-            <div className="relative">
-              <Image
-                src="/images/inicio/50years.png" 
-                alt="50 years women changing the world"
-                width={500}
-                height={250}
-                className="mx-auto relative z-10 mb-[-99px]"
-              />
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_02.png" alt="Imagen 2" className="object-cover w-full h-full" />
             </div>
-          </div>
-        </section>
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_03.png" alt="Imagen 3" className="object-cover w-full h-full" />
+            </div>
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_04.png" alt="Imagen 4" className="object-cover w-full h-full" />
+            </div>
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_05.png" alt="Imagen 5" className="object-cover w-full h-full" />
+            </div>
+            <div className="relative aspect-video bg-gray-800 rounded-lg overflow-hidden shadow-lg">
+              <img src="/images/inicio/forum_inicio_06.png" alt="Imagen 6" className="object-cover w-full h-full" />
+            </div>
+          </Slider>
+        </div>
+      </div>
+    </section>
+
+
 
       </main>
 

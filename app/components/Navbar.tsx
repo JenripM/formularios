@@ -158,7 +158,7 @@ export default function Navbar() {
         )}
       </header>
 
-      {isDropdownOpen && (
+      {isDropdownOpen && 
         <div className="dropdown-menu active">
           <div className="dropdown-content">
             <div className="dropdown-section">
@@ -171,15 +171,16 @@ export default function Navbar() {
                 <span className="dropdown-arrow">›</span>
               </Link>
             </div>
-            <div className="dropdown-section">
+           
+           {/* <div className="dropdown-section">
               <Link href="#" className="dropdown-link gray font-elegant text-2xl" onClick={() => setIsDropdownOpen(false)}>
                 Directorio y Comités
                 <span className="dropdown-arrow">›</span>
               </Link>
-            </div>
+            </div>*/}
           </div>
         </div>
-      )}
+      }
 
       {isSociasDropdownOpen && (
         <div className="dropdown-menu active">
