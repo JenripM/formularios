@@ -128,7 +128,7 @@ export default function IWFGlobal() {
         {/* Hero Banner */}
         <div className="relative w-full h-[400px]">
           <Image
-            src="https://lh3.googleusercontent.com/pw/AP1GczNgq0WToxTS6QjgmjMI71EKCR6kZqlwL_c4fL5sUqhwiPkdgCE4BaLOXF84A3isAJ00ZIgaff2jearV3sZaON-EN8xWABlYz15D3bPAFLdFR1GtyPvou0MgTq11HnbvtO91XiokV6NI2Fedc5EZtn25=w1418-h945-s-no-gm?authuser=0https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
+            src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
             alt="IWF Global Banner"
             fill
             className="object-cover"
