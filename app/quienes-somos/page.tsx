@@ -134,7 +134,8 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                      <img src="/images/quienesSomos/actividades_5.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+                      <img             src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
+ alt="Influencia Image" className="w-full h-full object-cover" />
 
                   </div>
                 </div>
