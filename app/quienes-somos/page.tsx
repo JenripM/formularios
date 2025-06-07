@@ -25,7 +25,7 @@ export default function QuienesSomos() {
       {/* Banner Section */}
       <section className="relative h-[500px] w-full">
         <Image
-          src="/images/quienesSomos/_MG_8336.jpg"
+            src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
           alt="IWF Forum Banner"
           fill
           className="object-cover"
