@@ -67,7 +67,7 @@ export default function ActividadesPage() {
             {/* Bottom Right - Image */}
             <div className="relative min-h-[200px] md:min-h-[192px]">
               <Image
-                src="/images/actividades/ac_2.jpg"
+                src="https://lh3.googleusercontent.com/pw/AP1GczPcwpdvYonNzxm1IBxu1IL9G3epdzny4Z9Bxzs1CrcGxa3bF71aRQSOhaRQYK2xd70T-n-90sKudO6MhCSqJZS93mcW-e3Q2gknCPnBGgxtacrtCYF3f_mYdnhXe75g-oqiXXlp__PjmkXJdq4ZEmwa=w1340-h893-s-no-gm?authuser=0"
                 alt="Actividades IWF"
                 fill
                 className="object-cover"
