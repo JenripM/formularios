@@ -162,12 +162,12 @@ export default function IWFGlobal() {
             <div className="grid md:grid-cols-2 gap-x-10">
               <div className="text-black font-elegant">
                 <p className="text-lg leading-tight mb-2">
-                  IWF nació en 1974 en Nueva York, cuando un grupo de mujeres visionarias creó una red de apoyo profesional para romper barreras en sectores dominados por hombres. Hoy conecta a más de 8.000 mujeres líderes en 77 foros de 34 países, presentes en América del Norte, Europa, Asia, Oriente Medio, África, América Latina y el Caribe, promoviendo el liderazgo femenino a nivel global.
+                  IWF nació en 1974 en Nueva York, cuando un grupo de mujeres visionarias creó una red de apoyo profesional para romper barreras en sectores dominados por hombres. Hoy conecta a más de 8.000 mujeres líderes en 78 foros de 35 países, presentes en América del Norte, Europa, Asia, Oriente Medio, África, América Latina y el Caribe, promoviendo el liderazgo femenino a nivel global.
                 </p>
               </div>
               <div className="text-black font-elegant">
                 <p className="text-lg leading-tight mb-2">
-                  Esta red de socias se administra desde las oficinas de IWF en Washington, DC. y no tiene más agenda política o ideológica que promover a las mujeres en el liderazgo y dar forma a un legado transferible para el beneficio de futuras mujeres líderes. Al vincular a las mujeres con exclusivos recursos, experiencias y oportunidades, la red global de IWF no tiene igual en ningún otro lugar del mundo en la actualidad. En Chile, IWF fue fundada en 2017, consolidándose como un espacio de colaboración y empoderamiento para mujeres prestigiosas y de trayectoria consolidada, y un motor de cambio hacia una sociedad más equitativa.
+                  Esta red de socias se administra desde las oficinas de IWF en Washington, DC. y no tiene más agenda política o ideológica que promover a las mujeres en el liderazgo y dar forma a un legado transferible para el beneficio de futuras mujeres líderes. Al vincular a las mujeres con exclusivos recursos, experiencias y oportunidades, la red global de IWF no tiene igual en ningún otro lugar del mundo en la actualidad. En Perú, IWF fue fundada en 2017, consolidándose como un espacio de colaboración y empoderamiento para mujeres prestigiosas y de trayectoria consolidada, y un motor de cambio hacia una sociedad más equitativa.
                 </p>
               </div>
             </div>
