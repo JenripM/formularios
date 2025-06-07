@@ -486,7 +486,7 @@ body {
   width: 120px;
   height: 3px;
   background: #ea580c;
-  margin: 1.5rem 0;
+  margin-top: -5rem; /* Ajusta el margen superior a lo que necesites */
   position: relative;
   overflow: hidden;
 }

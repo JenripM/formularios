@@ -69,17 +69,19 @@ export default function QuienesSomos() {
 
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-20 relative">
             {/* Left Column - Founder Image */}
-            <div className="w-full md:w-1/2">
-              <div className="relative h-[300px] md:h-[600px] w-full">
-                <Image
-                  src="/images/quienesSomos/1.png"
-                  alt="Fundadora IWF"
-                  fill
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </div>
+<div className="w-full md:w-1/2 sm:block flex justify-center">
+  <div className="relative h-[300px] md:h-[600px] w-full">
+    <Image
+      src="/images/quienesSomos/1.png"
+      alt="Fundadora IWF"
+      fill
+      className="object-contain"
+      priority
+    />
+  </div>
+</div>
+
+
 
             {/* Right Column - Text */}
             <div className="w-full md:w-1/2 relative">

@@ -48,8 +48,8 @@ export default function Home() {
               <div className="title-container">
                 <div className="w-full max-w-3xl">
                   <div className="words-carousel mb-1">
-                    <div className="words-carousel-inner">
-                      <h1 className="word-item text-3xl md:text-5xl font-montserrat font-bold text-gray-800 tracking-[0.15em]">
+                    <div className="words-carousel-inner -mb-32">
+                      <h1 className="word-item text-3xl md:text-5xl font-montserrat font-bold text-gray-800 tracking-[0.15em] ">
                         DIVERSIDAD
                       </h1>
                       <h1 className="word-item text-3xl md:text-5xl font-montserrat font-bold text-gray-800 tracking-[0.15em]">
