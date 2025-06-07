@@ -135,7 +135,7 @@ export default function IWFGlobal() {
             priority
           />
           <div className="absolute bottom-10 left-10">
-            <h1 className="text-white text-5xl font-modern mb-2">IWF GLOBAL</h1>
+            <h1 className="text-white text-5xl font-modern mb-2">IWF GLOBALggg</h1>
             <div className="w-32 h-1 bg-orange-500"></div>
           </div>
         </div>
