@@ -150,7 +150,7 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="/images/quienesSomos/actividades_4.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczMKY2N91X5WO0Gjs-ATSkq8rXIIIwBPyDEZViOmh2TbC4dshWoZhx8k20c0PVHh0BCv9qCl0xAeEcYLDCnnkYC6AtUmnA5tvgp_oxtLQ1SzTp9qe_IUwEFRXwYdcFRfWXqGD87CV9Uqp0YkcRG9O65f=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
 
                   </div>
                 </div>
@@ -166,7 +166,7 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="/images/quienesSomos/actividades_3.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczNT4FMDEhyDUDRZuSDZkKzvpjvU9rxfGb1XRyvQPAcx_7J9M8CPijt8tHTE68MkvwNvjpl9O00h6CyV4mjiLDbo-aw2uTVhjuknb_JuYDTbERNMt7rZHBtOtMlYpfZFdn4_Ii1GgLmRkJYWK9AqUeXH=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
 
                   </div>
                 </div>
@@ -182,7 +182,7 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="/images/quienesSomos/actividades_2.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczMHiYPWGUT0Ond0SerNvdPHPbuQ6S8v6d7aoXKbYP2KVg3-z7FOGTSMX6NhkDh9nyK2XSCuGkFjQ6cNHAenicdKIX2QJf6YbNDIPLOhjqpHvMAuSeDm40kNr6ddqU9OYSmj-bZnRgktVI_rFC-K1OWd=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
 
                   </div>
                 </div>
