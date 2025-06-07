@@ -128,7 +128,7 @@ export default function IWFGlobal() {
         {/* Hero Banner */}
         <div className="relative w-full h-[400px]">
           <Image
-            src="/images/iwfGlobal/fig1.jpg"
+            src="/images/quienessomos/_MG_8336.jpg"
             alt="IWF Global Banner"
             fill
             className="object-cover"
