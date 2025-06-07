@@ -134,9 +134,8 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                    <div className="w-full h-full bg-gradient-to-br from-green-400 to-green-600 flex items-center justify-center">
-                      <span className="text-white text-xs">Influencia Image</span>
-                    </div>
+                      <img src="/images/quienesSomos/actividades_5.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Influencia</h3>
@@ -150,9 +149,8 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                    <div className="w-full h-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center">
-                      <span className="text-white text-xs">Visibilidad Image</span>
-                    </div>
+                                          <img src="/images/quienesSomos/actividades_4.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Visibilidad</h3>
@@ -167,9 +165,8 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                    <div className="w-full h-full bg-gradient-to-br from-purple-400 to-purple-600 flex items-center justify-center">
-                      <span className="text-white text-xs">Diversidad Image</span>
-                    </div>
+                                          <img src="/images/quienesSomos/actividades_3.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Diversidad</h3>
@@ -184,9 +181,8 @@ export default function QuienesSomos() {
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                    <div className="w-full h-full bg-gradient-to-br from-orange-400 to-orange-600 flex items-center justify-center">
-                      <span className="text-white text-xs">Comunidad Image</span>
-                    </div>
+                                          <img src="/images/quienesSomos/actividades_2.jpg" alt="Influencia Image" className="w-full h-full object-cover" />
+
                   </div>
                 </div>
                 <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Comunidad</h3>
