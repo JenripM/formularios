@@ -187,7 +187,7 @@ export default function Navbar() {
           <div className="dropdown-content">
             <div className="dropdown-section">
               <h3>Socias</h3>
-              <p>IWF Chile reúne a un grupo diverso de mujeres líderes con destacada trayectoria en distintos ámbitos, desde los negocios y la academia hasta ciencia, cultura o servicio público.</p>
+              <p>IWF Perú  reúne a un grupo diverso de mujeres líderes con destacada trayectoria en distintos ámbitos, desde los negocios y la academia hasta ciencia, cultura o servicio público.</p>
             </div>
             <div className="dropdown-section">
               <Link href="/socias/listado" className="dropdown-link font-elegant text-2xl" onClick={() => setIsSociasDropdownOpen(false)}>

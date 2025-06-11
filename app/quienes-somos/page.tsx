@@ -1,10 +1,10 @@
-"use client"
+"use client";
 
-import Image from "next/image"
-import Navbar from "../components/Navbar"
-import Footer from "../components/Footer"
-import { ArrowUp } from "lucide-react"
-import { useState, useEffect } from "react"
+import Image from "next/image";
+import Navbar from "../components/Navbar";
+import Footer from "../components/Footer";
+import { ArrowUp } from "lucide-react";
+import { useState, useEffect } from "react";
 
 export default function QuienesSomos() {
   const [showScrollTop, setShowScrollTop] = useState(false);
@@ -14,8 +14,8 @@ export default function QuienesSomos() {
       setShowScrollTop(window.scrollY > 400);
     };
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
@@ -25,14 +25,14 @@ export default function QuienesSomos() {
       {/* Banner Section */}
       <section className="relative h-[500px] w-full">
         <Image
-            src="https://i.imgur.com/IsTwVCN.jpeg"
+          src="https://i.imgur.com/IsTwVCN.jpeg"
           alt="IWF Forum Banner"
           fill
           className="object-cover"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
-        
+
         <div className="absolute inset-0 flex items-end justify-start p-8 sm:p-12 md:p-16">
           <div>
             <h1 className="text-white text-4xl sm:text-5xl font-montserrat font-bold tracking-wider">
@@ -58,7 +58,7 @@ export default function QuienesSomos() {
             </div>
           </div>
         </div>
-        
+
         <div className="container mx-auto px-5">
           {/* Mobile Title */}
           <div className="md:hidden mb-8">
@@ -69,19 +69,17 @@ export default function QuienesSomos() {
 
           <div className="flex flex-col md:flex-row items-start justify-between gap-8 md:gap-20 relative">
             {/* Left Column - Founder Image */}
-<div className="w-full md:w-1/2 sm:block flex justify-center">
-  <div className="relative h-[300px] md:h-[600px] w-full">
-    <Image
-      src="/images/quienesSomos/1.png"
-      alt="Fundadora IWF"
-      fill
-      className="object-contain"
-      priority
-    />
-  </div>
-</div>
-
-
+            <div className="w-full md:w-1/2 sm:block flex justify-center">
+              <div className="relative h-[300px] md:h-[600px] w-full">
+                <Image
+                  src="/images/quienesSomos/1.png"
+                  alt="Fundadora IWF"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </div>
 
             {/* Right Column - Text */}
             <div className="w-full md:w-1/2 relative">
@@ -94,10 +92,22 @@ export default function QuienesSomos() {
                   className="object-contain"
                 />
               </div>
-              
+
               <div className="mt-0 md:mt-[320px] pr-0 md:pr-16">
-                <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant" style={{ lineHeight: '1.8' }}>
-                  IWF es una comunidad internacional, no partidista y apolítica, presente en 34 países, entre ellos Perú, y que tiene más de 8.000 mujeres líderes de primer nivel como asociadas, con más de 50 años consecutivos de continuo crecimiento. Ha sido creada para enriquecer y promover el liderazgo femenino, conectando a mujeres de alto nivel profesional a través de diversos espacios de encuentro, con el compromiso de impulsar la igualdad de oportunidades.
+                <p
+                  className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant"
+                  style={{ lineHeight: "1.8" }}
+                >
+                  IWF Perú tiene como propósito impulsar la equidad y el
+                  liderazgo femenino, promover el intercambio cultural y
+                  profesional entre mujeres de diversos ámbitos. Buscamos
+                  generar impacto, movilizar e inspirar a lideres peruanas
+                  mediante la difusión de ideas y nuevas perspectivas a través
+                  del desarrollo de programas, conversatorios y eventos
+                  innovadores en temas vinculados al liderazgo, crecimiento
+                  personal y profesional, tecnología, cultura, arte, educación,
+                  deporte y diversidad, promoviendo espacios más inclusivos y
+                  equitativos para las futuras generaciones.{" "}
                 </p>
               </div>
             </div>
@@ -105,27 +115,26 @@ export default function QuienesSomos() {
         </div>
 
         {/* Vision y Mision - Now outside the container, for full-width */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-0 mt-16 md:mt-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-0 mt-16 md:mt-32">
           <div className="bg-[#F5F1EC] p-8 md:p-16">
-            <h2 className="text-2xl md:text-4xl font-modern text-gray-800 mb-4 md:mb-6">NUESTRA VISIÓN</h2>
+            <h2 className="text-2xl md:text-4xl font-modern text-gray-800 mb-4 md:mb-6">
+              NUESTRA VISIÓN
+            </h2>
             <p className="text-gray-600 text-base md:text-xl leading-relaxed font-elegant">
-              Ser un foro influyente de mujeres líderes peruanas que impacten positivamente en su entorno, generando redes de confianza, colaboración y crecimiento, tanto a nivel nacional como internacional.
+              Ser un foro influyente de mujeres líderes peruanas que impacten
+              positivamente en su entorno, generando redes de confianza,
+              colaboración y crecimiento, tanto a nivel nacional como
+              internacional.
             </p>
           </div>
           <div className="bg-[#D4B572] p-8 md:p-16">
-            <h2 className="text-2xl md:text-4xl font-modern text-gray-700 mb-4 md:mb-6">NUESTRA MISIÓN</h2>
+            <h2 className="text-2xl md:text-4xl font-modern text-gray-700 mb-4 md:mb-6">
+              NUESTRA MISIÓN
+            </h2>
             <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant">
-              Fomentar la participación activa de mujeres líderes en diversos ámbitos del país, promoviendo el desarrollo de sus capacidades, el fortalecimiento de su influencia y el apoyo entre pares.
-            </p>
-          </div>
-           <div className="bg-[#F5F1EC] p-8 md:p-16">
-            <h2 className="text-2xl md:text-4xl font-modern text-gray-700 mb-4 md:mb-6">PROPÓSITO</h2>
-            <p className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant">
-
-
-Nuestro propósito es impulsar la equidad y el liderazgo femenino a nivel global, promoviendo el intercambio cultural y profesional entre mujeres de diversos ámbitos.
-
-IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difusión de ideas y nuevas perspectivas mediante el desarrollo de programas,  conversatorios y eventos innovadores en temas vinculados al liderazgo, crecimiento personal y profesional, tecnología, cultura, arte, educación, deporte y diversidad, promoviendo espacios más inclusivos y equitativos para las futuras generaciones
+              Fomentar la participación activa de mujeres líderes en diversos
+              ámbitos del país, promoviendo el desarrollo de sus capacidades, el
+              fortalecimiento de su influencia y el apoyo entre pares.
             </p>
           </div>
         </div>
@@ -135,7 +144,9 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
           <div className="container mx-auto px-5">
             {/* Title */}
             <div className="text-left mb-8 md:mb-16">
-              <h2 className="text-2xl md:text-4xl font-modern text-gray-800 mb-4">EJES FUNDAMENTALES</h2>
+              <h2 className="text-2xl md:text-4xl font-modern text-gray-800 mb-4">
+                EJES FUNDAMENTALES
+              </h2>
               <div className="w-32 h-1 bg-orange-500"></div>
             </div>
 
@@ -146,14 +157,20 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                      <img             src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
- alt="Influencia Image" className="w-full h-full object-cover" />
-
+                    <img
+                      src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
+                      alt="Influencia Image"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Influencia</h3>
+                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">
+                  Influencia
+                </h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
-                  <p className="mb-2">- <strong>Inspiramos</strong> a otras mujeres.</p>
+                  <p className="mb-2">
+                    - <strong>Inspiramos</strong> a otras mujeres.
+                  </p>
                 </div>
               </div>
 
@@ -162,14 +179,25 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczMKY2N91X5WO0Gjs-ATSkq8rXIIIwBPyDEZViOmh2TbC4dshWoZhx8k20c0PVHh0BCv9qCl0xAeEcYLDCnnkYC6AtUmnA5tvgp_oxtLQ1SzTp9qe_IUwEFRXwYdcFRfWXqGD87CV9Uqp0YkcRG9O65f=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
-
+                    <img
+                      src="https://lh3.googleusercontent.com/pw/AP1GczMKY2N91X5WO0Gjs-ATSkq8rXIIIwBPyDEZViOmh2TbC4dshWoZhx8k20c0PVHh0BCv9qCl0xAeEcYLDCnnkYC6AtUmnA5tvgp_oxtLQ1SzTp9qe_IUwEFRXwYdcFRfWXqGD87CV9Uqp0YkcRG9O65f=w1418-h945-s-no-gm?authuser=0"
+                      alt="Influencia Image"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Visibilidad</h3>
+                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">
+                  Visibilidad
+                </h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
-                  <p className="mb-2">- <strong>Somos un referente</strong> para otras mujeres peruanas.</p>
-                  <p className="mb-2">- <strong>Prestigio</strong> de ser parte de la organización.</p>
+                  <p className="mb-2">
+                    - <strong>Somos un referente</strong> para otras mujeres
+                    peruanas.
+                  </p>
+                  <p className="mb-2">
+                    - <strong>Prestigio</strong> de ser parte de la
+                    organización.
+                  </p>
                 </div>
               </div>
 
@@ -178,14 +206,25 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczNT4FMDEhyDUDRZuSDZkKzvpjvU9rxfGb1XRyvQPAcx_7J9M8CPijt8tHTE68MkvwNvjpl9O00h6CyV4mjiLDbo-aw2uTVhjuknb_JuYDTbERNMt7rZHBtOtMlYpfZFdn4_Ii1GgLmRkJYWK9AqUeXH=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
-
+                    <img
+                      src="https://lh3.googleusercontent.com/pw/AP1GczNT4FMDEhyDUDRZuSDZkKzvpjvU9rxfGb1XRyvQPAcx_7J9M8CPijt8tHTE68MkvwNvjpl9O00h6CyV4mjiLDbo-aw2uTVhjuknb_JuYDTbERNMt7rZHBtOtMlYpfZFdn4_Ii1GgLmRkJYWK9AqUeXH=w1418-h945-s-no-gm?authuser=0"
+                      alt="Influencia Image"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Diversidad</h3>
+                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">
+                  Diversidad
+                </h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
-                  <p className="mb-2">- <strong>Son parte</strong> mujeres de distintas disciplinas, generaciones y regiones.</p>
-                  <p className="mb-2">- <strong>Aseguramos</strong> que nuestra red refleje la riqueza y pluralidad del talento femenino en Perú.</p>
+                  <p className="mb-2">
+                    - <strong>Son parte</strong> mujeres de distintas
+                    disciplinas, generaciones y regiones.
+                  </p>
+                  <p className="mb-2">
+                    - <strong>Aseguramos</strong> que nuestra red refleje la
+                    riqueza y pluralidad del talento femenino en Perú.
+                  </p>
                 </div>
               </div>
 
@@ -194,13 +233,21 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
                 <div className="relative w-32 h-20 md:w-48 md:h-32 mx-auto mb-4 md:mb-6">
                   <div className="w-full h-full bg-gray-200 rounded-full overflow-hidden">
                     {/* Placeholder for image - you'll need to add the actual image */}
-                                          <img src="https://lh3.googleusercontent.com/pw/AP1GczMHiYPWGUT0Ond0SerNvdPHPbuQ6S8v6d7aoXKbYP2KVg3-z7FOGTSMX6NhkDh9nyK2XSCuGkFjQ6cNHAenicdKIX2QJf6YbNDIPLOhjqpHvMAuSeDm40kNr6ddqU9OYSmj-bZnRgktVI_rFC-K1OWd=w1418-h945-s-no-gm?authuser=0" alt="Influencia Image" className="w-full h-full object-cover" />
-
+                    <img
+                      src="https://lh3.googleusercontent.com/pw/AP1GczMHiYPWGUT0Ond0SerNvdPHPbuQ6S8v6d7aoXKbYP2KVg3-z7FOGTSMX6NhkDh9nyK2XSCuGkFjQ6cNHAenicdKIX2QJf6YbNDIPLOhjqpHvMAuSeDm40kNr6ddqU9OYSmj-bZnRgktVI_rFC-K1OWd=w1418-h945-s-no-gm?authuser=0"
+                      alt="Influencia Image"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </div>
-                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">Comunidad</h3>
+                <h3 className="text-xl md:text-2xl font-modern text-gray-800 mb-3 md:mb-4">
+                  Comunidad
+                </h3>
                 <div className="text-gray-600 font-elegant text-sm md:text-lg leading-relaxed">
-                  <p className="mb-2">- <strong>Damos acceso</strong> a una red internacional de mujeres influyentes.</p>
+                  <p className="mb-2">
+                    - <strong>Damos acceso</strong> a una red internacional de
+                    mujeres influyentes.
+                  </p>
                 </div>
               </div>
             </div>
@@ -219,5 +266,5 @@ IWF PERU busca generar impacto, movilizar e inspirar a lideres mediante la difus
         </button>
       )}
     </div>
-  )
-} 
+  );
+}
