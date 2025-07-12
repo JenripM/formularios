@@ -24,8 +24,8 @@ export default function QuienesSomos() {
 
       {/* Banner Section */}
       <section className="relative h-[500px] w-full">
-        <Image
-          src="https://i.imgur.com/IsTwVCN.jpeg"
+        <Image          
+          src="https://lh3.googleusercontent.com/pw/AP1GczMx3Ga0MZzjCR3emJgkmAyxuYX9iqdtPx8xKcVQp5Lstl8ubl68p_b9qk6mQVTCWQbKaPzCSXRq5CvYEFWqbySWruV5r2_b2HfP1P1lRGs6P-htS3ye-hw1Loee4mYPduX33Jtvft3SxYstry7dhhXw=w1418-h945-s-no-gm?authuser=0"
           alt="IWF Forum Banner"
           fill
           className="object-cover"
@@ -98,16 +98,17 @@ export default function QuienesSomos() {
                   className="text-gray-700 text-base md:text-xl leading-relaxed font-elegant"
                   style={{ lineHeight: "1.8" }}
                 >
-                  IWF Perú tiene como propósito impulsar la equidad y el
-                  liderazgo femenino, promover el intercambio cultural y
-                  profesional entre mujeres de diversos ámbitos. Buscamos
-                  generar impacto, movilizar e inspirar a lideres peruanas
-                  mediante la difusión de ideas y nuevas perspectivas a través
-                  del desarrollo de programas, conversatorios y eventos
-                  innovadores en temas vinculados al liderazgo, crecimiento
-                  personal y profesional, tecnología, cultura, arte, educación,
-                  deporte y diversidad, promoviendo espacios más inclusivos y
-                  equitativos para las futuras generaciones.{" "}
+                  IWF Perú es una organización de mujeres líderes que buscan
+                  fortalecer sus estilos de liderazgo y ayudar a otras a
+                  fortalecer los suyos interactuando, conectando y aprendiendo
+                  de otras líderes en diferentes sectores y de sus mismos
+                  sectores a nivel mundial. IWF es la mayor organización global
+                  de mujeres líderes que cuenta con mujeres referentes de todos
+                  los sectores, especialidades, edades y perfiles. Es un espacio
+                  donde buscamos dar para recibir y donde buscamos generar
+                  sororidad, visibilizando siempre los logros de las demás. IWF
+                  Perú es una tribu de mujeres líderes donde juntas somos más
+                  fuertes.{" "}
                 </p>
               </div>
             </div>
