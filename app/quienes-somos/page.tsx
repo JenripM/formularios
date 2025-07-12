@@ -102,13 +102,14 @@ export default function QuienesSomos() {
                   fortalecer sus estilos de liderazgo y ayudar a otras a
                   fortalecer los suyos interactuando, conectando y aprendiendo
                   de otras líderes en diferentes sectores y de sus mismos
-                  sectores a nivel mundial. IWF es la mayor organización global
-                  de mujeres líderes que cuenta con mujeres referentes de todos
-                  los sectores, especialidades, edades y perfiles. Es un espacio
+                  sectores a nivel mundial. {" "}
+                  IWF es la mayor organización global de mujeres líderes que cuenta con mujeres referentes de todos
+                  los sectores, especialidades, edades y perfiles. {" "}
+                  Es un espacio
                   donde buscamos dar para recibir y donde buscamos generar
                   sororidad, visibilizando siempre los logros de las demás. IWF
                   Perú es una tribu de mujeres líderes donde juntas somos más
-                  fuertes.{" "}
+                  fuertes.
                 </p>
               </div>
             </div>
