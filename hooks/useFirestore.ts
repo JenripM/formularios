@@ -8,6 +8,7 @@ import {
   where,
   QuerySnapshot,
   DocumentData,
+  orderBy,
 } from "firebase/firestore";
 import { db } from "../lib/firebase";
 
@@ -39,7 +40,8 @@ const getEquipo = async (): Promise<DocumentData[] | null> => {
   setError(null);
   try {
     const colRef = collection(db, "equipo");
-    const snapshot = await getDocs(colRef);
+    // Ordena los documentos por el campo 'fechaRegistro' de manera ascendente
+    const snapshot = await getDocs(query(colRef, orderBy("fechaRegistro")));
     const data = snapshot.docs.map(doc => ({ id: doc.id, ...doc.data() }));
     setLoading(false);
     return data;
