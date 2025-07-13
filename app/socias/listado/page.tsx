@@ -79,6 +79,8 @@ export default function ListadoSociasPage() {
             <li>Consuelo Pareja</li>
         </ul>
           </div>
+<br />
+          <h3><a href="https://iwforum.org/">Conoce más sobre sus miembros</a></h3>
         </div>
 
         {/* Socias Grid */}
