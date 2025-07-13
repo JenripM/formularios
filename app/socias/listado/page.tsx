@@ -35,7 +35,7 @@ export default function ListadoSociasPage() {
       {/* Hero Section */}
       <div className="relative h-[400px] bg-gradient-to-r from-black/50 to-black/30">
         <Image
-          src="/images/socias/socias_conjunto2.jpg"
+          src="/images/socias/socias_conjunto2.png"
           alt="Socias IWF"
           fill
           className="object-cover"
@@ -45,7 +45,7 @@ export default function ListadoSociasPage() {
         <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 w-full max-w-7xl px-5">
           <div className="flex flex-col">
             <h1 className="text-white text-3xl font-montserrat font-medium tracking-[0.15em] mb-2">
-              SOCIAS
+              BOARD
             </h1>
             <div className="w-16 h-1 bg-orange-500"></div>
           </div>
@@ -57,25 +57,33 @@ export default function ListadoSociasPage() {
         {/* Section Title */}
         <div className="text-center mb-10">
           <h2 className="text-2xl font-light text-gray-800 mb-6 tracking-wide font-elegant">
-            NUESTRAS SOCIAS
+            BOARD
           </h2>
           <div className="max-w-3xl mx-auto">
-            <p className="text-gray-600 leading-relaxed mb-4 text-sm font-elegant">
-              IWF Perú reúne a un grupo diverso de mujeres líderes con destacada trayectoria en ámbitos como los negocios, la academia, la 
-              ciencia, la cultura y el servicio público. A través de su experiencia y conocimientos, nuestras socias contribuyen activamente al 
-              desarrollo de la organización y al fortalecimiento del liderazgo femenino en Perú.
+            <p className="text-gray-600 leading-relaxed mb-4 text-md font-elegant">
+              IWF Perú cuenta con más de 51 mujeres de diferentes sectores, experiencias desde periodistas, artistas, empresarias, directoras de empresas, escritoras, diplomáticas, políticas que buscan generar sororidad y un Perú mejor. Asimismo, IWF Perú está conformado por un board de 8 miembros:
             </p>
-            <p className="text-gray-600 leading-relaxed text-sm font-elegant">
-              Conoce a las mujeres que forman parte de esta red y que, con su visión y liderazgo, impulsan el cambio en Perú y el mundo. IWF 
-              desempeña un papel crucial a la hora de incentivar a la próxima generación de mujeres líderes, ayudándolas a que persigan sus 
-              sueños y sus aspiraciones de desarrollo profesional.
-            </p>
+<h2 className="text-lg font-semibold text-gray-700 mb-3 leading-relaxed font-elegant">
+    Fundadora: <span className="font-normal">Ines Temple</span>
+</h2>
+        <h2 className="text-lg font-semibold text-gray-700 mb-3 leading-relaxed font-elegant">
+           Miembros del Board:
+        </h2>
+        <ul className="text-lg text-gray-700 leading-relaxed font-elegant">
+            <li>Lieneke Schol</li>
+            <li>Cayetana Aljovín</li>
+            <li>Verónica Zavala</li>
+            <li>Alba San Martín</li>
+            <li>Carla Olivieri</li>
+            <li>Andrea de la Piedra</li>
+            <li>Consuelo Pareja</li>
+        </ul>
           </div>
         </div>
 
         {/* Socias Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {equipoList.map((member) => (
+        {/*  {equipoList.map((member) => (
             <div key={member.id} className="bg-white overflow-hidden hover:shadow-lg transition-shadow duration-300">
               <div className="aspect-[3/4] relative">
                 <Image
@@ -100,7 +108,9 @@ export default function ListadoSociasPage() {
                 </button>
               </div>
             </div>
-          ))}
+          ))}*/}
+
+          
         </div>
       </div>
       
