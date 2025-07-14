@@ -57,7 +57,7 @@ export default function ListadoSociasPage() {
         {/* Section Title */}
         <div className="text-center mb-10">
           <h2 className="text-2xl font-light text-gray-800 mb-6 tracking-wide font-elegant">
-            BOARD
+            SOCIAS
           </h2>
           <div className="max-w-3xl mx-auto">
             <p className="text-gray-600 leading-relaxed mb-4 text-md font-elegant">
