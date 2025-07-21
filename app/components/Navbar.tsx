@@ -71,7 +71,7 @@ export default function Navbar() {
               className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm"
               onClick={handleSociasClick}
             >
-              SOCIAS
+              BOARD
             </button>
             <Link href="/actividades" className="text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm">
               ACTIVIDADES
@@ -137,7 +137,7 @@ export default function Navbar() {
                 className="px-5 py-3 text-gray-700 hover:text-orange-600 font-medium tracking-[0.15em] text-sm border-b border-gray-200"
                 onClick={closeMobileMenu}
               >
-                SOCIAS
+                BOARD
               </Link>
               <Link 
                 href="/actividades" 
